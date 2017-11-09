@@ -5,7 +5,7 @@ Welcome to Sans Bureau's Landing Boilerplate 🌈
 ### How to start this project?
 Install:
 
-`npm i -g gulp && npm i -g pushstate-server`
+`yarn global gulp && yarn global pushstate-server`
 
 `yarn install`
 
