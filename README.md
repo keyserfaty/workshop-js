@@ -1,1 +1,1 @@
-Welcome to Sans Bureau's Landing Boilerplate ❄️
+Welcome to Sans Bureau's Landing Boilerplate 🌈
