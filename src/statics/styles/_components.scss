@@ -5,24 +5,26 @@
   &__content {
     display: flex;
 
-    &__photos__list {
+    &__photos {
       width: 42%;
-      display: flex;
       overflow: hidden;
 
-      &__item {
-        overflow: hidden;
+      &__list {
+        display: flex;
 
-        img {
+        &__item {
           width: 100%;
-          height: auto;
-          display: block;
+
+          img {
+            width: -webkit-fill-available;
+            display: block;
+          }
         }
       }
     }
 
     &__info {
-      padding: 230px 0 150px 120px;
+      padding: 230px 0 0 120px;
       position: relative;
 
       &__button {
@@ -60,6 +62,11 @@
           display: flex;
           align-items: center;
           position: relative;
+          margin-bottom: 25px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
 
           &__loader, &__name {
             margin-right: 23px;

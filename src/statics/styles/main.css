@@ -62,18 +62,18 @@ table {
   background: #003981; }
   .slider__content {
     display: flex; }
-    .slider__content__photos__list {
+    .slider__content__photos {
       width: 42%;
-      display: flex;
       overflow: hidden; }
-      .slider__content__photos__list__item {
-        overflow: hidden; }
-        .slider__content__photos__list__item img {
-          width: 100%;
-          height: auto;
-          display: block; }
+      .slider__content__photos__list {
+        display: flex; }
+        .slider__content__photos__list__item {
+          width: 100%; }
+          .slider__content__photos__list__item img {
+            width: -webkit-fill-available;
+            display: block; }
     .slider__content__info {
-      padding: 230px 0 150px 120px;
+      padding: 230px 0 0 120px;
       position: relative; }
       .slider__content__info__button {
         position: absolute;
@@ -100,7 +100,10 @@ table {
         .slider__content__info__team__list__item {
           display: flex;
           align-items: center;
-          position: relative; }
+          position: relative;
+          margin-bottom: 25px; }
+          .slider__content__info__team__list__item:last-child {
+            margin-bottom: 0; }
           .slider__content__info__team__list__item__loader, .slider__content__info__team__list__item__name {
             margin-right: 23px; }
           .slider__content__info__team__list__item__loader {
