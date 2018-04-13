@@ -63,8 +63,7 @@ table {
   .slider__content {
     display: flex; }
     .slider__content__photos {
-      width: 42%;
-      overflow: hidden; }
+      width: 42%; }
       .slider__content__photos__list {
         display: flex; }
         .slider__content__photos__list__item {
@@ -127,6 +126,11 @@ table {
   color: #363F54;
   font-family: 'National-Bold', sans-serif;
   font-size: 14px; }
+
+.slide-right {
+  transition-property: transform;
+  transition-duration: 1.5s;
+  transition-timing-function: cubic-bezier(0, 0, 1, 1); }
 
 body {
   -webkit-font-smoothing: antialiased; }
