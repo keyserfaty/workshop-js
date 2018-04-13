@@ -46,5 +46,108 @@ table {
   border-spacing: 0; }
 
 @font-face {
-  font-family: 'Proxima-Nova-Semibold';
-  src: url(../fonts/Proxima-Nova-Semibold.ttf); }
+  font-family: 'National-Bold';
+  src: url(../fonts/National-Bold.otf); }
+
+@font-face {
+  font-family: 'National-Book';
+  src: url(../fonts/National-Book.otf); }
+
+@font-face {
+  font-family: 'National-Regular';
+  src: url(../fonts/National-Regular.otf); }
+
+.slider {
+  margin: 50px;
+  background: #003981; }
+  .slider__content {
+    display: flex; }
+    .slider__content__photos__list {
+      width: 42%;
+      display: flex;
+      overflow: hidden; }
+      .slider__content__photos__list__item {
+        overflow: hidden; }
+        .slider__content__photos__list__item img {
+          width: 100%;
+          height: auto;
+          display: block; }
+    .slider__content__info {
+      padding: 230px 0 150px 120px;
+      position: relative; }
+      .slider__content__info__button {
+        position: absolute;
+        top: 90px;
+        right: -13%; }
+      .slider__content__info__title {
+        position: absolute;
+        top: 67px;
+        left: -50px;
+        width: 0; }
+        .slider__content__info__title:before {
+          content: '';
+          position: absolute;
+          border-radius: 3px;
+          width: 60px;
+          height: 3px;
+          background-color: #FFF;
+          right: calc(100% + 35px);
+          top: 35px; }
+      .slider__content__info__description {
+        max-width: 240px; }
+      .slider__content__info__team__list {
+        margin-top: 100px; }
+        .slider__content__info__team__list__item {
+          display: flex;
+          align-items: center;
+          position: relative; }
+          .slider__content__info__team__list__item__loader, .slider__content__info__team__list__item__name {
+            margin-right: 23px; }
+          .slider__content__info__team__list__item__loader {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 47px;
+            height: 1px;
+            overflow: hidden;
+            background-color: #8A99C0; }
+          .slider__content__info__team__list__item__name {
+            margin-left: 70px; }
+
+.button {
+  position: absolute;
+  padding: 18px 20px 18px 20px;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  border: none;
+  color: #363F54;
+  font-family: 'National-Bold', sans-serif;
+  font-size: 14px; }
+
+body {
+  -webkit-font-smoothing: antialiased; }
+
+h1 {
+  color: white;
+  font-family: 'National-Bold', sans-serif;
+  font-size: 42px;
+  line-height: 51px; }
+
+p {
+  color: #8a99c0;
+  font-family: 'National-Regular', sans-serif;
+  font-size: 18px;
+  line-height: 24px; }
+
+.upper {
+  text-transform: uppercase; }
+
+.bold {
+  font-family: 'National-Bold', sans-serif; }
+
+.blue {
+  color: #8a99c0; }
+
+.hide {
+  display: none; }

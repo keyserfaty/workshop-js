@@ -1,0 +1,97 @@
+.slider {
+  margin: 50px;
+  background: #003981;
+
+  &__content {
+    display: flex;
+
+    &__photos__list {
+      width: 42%;
+      display: flex;
+      overflow: hidden;
+
+      &__item {
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+      }
+    }
+
+    &__info {
+      padding: 230px 0 150px 120px;
+      position: relative;
+
+      &__button {
+        position: absolute;
+        top: 90px;
+        right: -13%;
+      }
+
+      &__title {
+        position: absolute;
+        top: 67px;
+        left: -50px;
+        width: 0;
+
+        &:before {
+          content: '';
+          position: absolute;
+          border-radius: 3px;
+          width: 60px;
+          height: 3px;
+          background-color: #FFF;
+          right: calc(100% + 35px);
+          top: 35px;
+        }
+      }
+
+      &__description {
+        max-width: 240px;
+      }
+
+      &__team__list {
+        margin-top: 100px;
+
+        &__item {
+          display: flex;
+          align-items: center;
+          position: relative;
+
+          &__loader, &__name {
+            margin-right: 23px;
+          }
+          
+          &__loader {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 47px;
+            height: 1px;
+            overflow: hidden;
+            background-color: #8A99C0;
+          }
+
+          &__name {
+            margin-left: 70px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.button {
+  position: absolute;
+  padding: 18px 20px 18px 20px;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  border: none;
+  color: #363F54;
+  font-family: 'National-Bold', sans-serif;
+  font-size: 14px;
+}

@@ -1,2 +1,37 @@
 @import "reset";
 @import "fonts";
+@import "components";
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-family: 'National-Bold', sans-serif;
+  font-size: 42px;
+  line-height: 51px;
+}
+
+p {
+  color: rgb(138, 153, 192);
+  font-family: 'National-Regular', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-family: 'National-Bold', sans-serif;
+}
+
+.blue {
+  color: rgb(138, 153, 192);
+}
+
+.hide {
+  display: none;
+}
