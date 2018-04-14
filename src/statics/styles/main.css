@@ -63,7 +63,8 @@ table {
   .slider__content {
     display: flex; }
     .slider__content__photos {
-      width: 42%; }
+      width: 42%;
+      overflow: hidden; }
       .slider__content__photos__list {
         display: flex; }
         .slider__content__photos__list__item {

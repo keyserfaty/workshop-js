@@ -46,34 +46,38 @@
     }
   }
 
-  sliderNode.addEventListener('click', function () {
+  setInterval(function () {
     sliderNode.classList.add('slide-right')
     sliderNode.style.transform = 'translateX(-100%)'
 
     setTimeout(function () {
       visiblePair = addOneToPair(visiblePair)
       for (var i = 0; i < photosNodes.length; i++) {
+        //sliderNode.classList.add('slide-right')
+        // If photo is in pair that needs to be shown display it
         if (visiblePair.includes(Number(photosNodes[i].getAttribute('data-num')))) {
           photosNodes[i].classList.remove('hide')
-        } else if (visiblePair[0] === 3 && visiblePair[1] === 0) {
-          sliderNode.style.flexDirection = 'row-reverse'
-          sliderNode.style.transform = 'translateX(100%)'
-          sliderNode.classList.remove('slide-right')
-          photosNodes[i].classList.add('hide')
-
-          setTimeout(function () {
-            sliderNode.style.flexDirection = 'row'
-            sliderNode.style.transform = 'translateX(-100%)'
-            sliderNode.classList.remove('slide-right')
-          }, 2000)
+        // If not hide it and move it to the beginning
         } else {
           photosNodes[i].classList.add('hide')
-          sliderNode.style.flexDirection = 'row'
           sliderNode.style.transform = 'translateX(0%)'
           sliderNode.classList.remove('slide-right')
         }
-      }
 
+        // If pair is the last in the row and picture is the last one
+        if ((visiblePair[0] === 3 && visiblePair[1] === 0) && Number(photosNodes[i].getAttribute('data-num')) === 3) {
+          // Reverse row so that 4 -> 1 (number 1 follows 4)
+          sliderNode.style.flexDirection = 'row-reverse'
+          sliderNode.style.transform = 'translateX(100%)'
+          sliderNode.classList.remove('slide-right')
+
+          // After 2 seconds (when the slide has passed) set it back to row 1 -> 2
+          setTimeout(function () {
+            sliderNode.style.flexDirection = 'row'
+            sliderNode.style.transform = 'translateX(0%)'
+          }, 2000)
+        }
+      }
     }, 2000)
-  })
+  }, 4000)
 })()
