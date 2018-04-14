@@ -1,24 +1,5 @@
 .slide-right {
   //* 1. Add animation to transform
-  //transition-property: transform;
-  //transition-duration: 4s;
-
-  //* 2. Add jumping to slide
-  //transition-property: transform;
-  //transition-duration: 4s;
-
-  //* 3. Adding timing with brezier curves
-  //transition-property: transform;
-  //transition-duration: 4s;
-  //transition-timing-function: cubic-bezier(.5, -1, .5, 2);
-
-  //* 4. Adding timing with steps
-  //transition-property: transform;
-  //transition-duration: 3s;
-  //transition-timing-function: steps(3, start);;
-
-  //* 5. Adding transitions to steps with brezier curves
   transition-property: transform;
-  transition-duration: 1.5s;
-  transition-timing-function: cubic-bezier(.5, -1, .5, 2);
+  transition-duration: 4s;
 }
