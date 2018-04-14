@@ -20,5 +20,5 @@
   //* 5. Adding transitions to steps with brezier curves
   transition-property: transform;
   transition-duration: 1.5s;
-  transition-timing-function: cubic-bezier(0, 0, 1, 1);
+  transition-timing-function: cubic-bezier(.5, -1, .5, 2);
 }

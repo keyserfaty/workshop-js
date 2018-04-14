@@ -131,7 +131,7 @@ table {
 .slide-right {
   transition-property: transform;
   transition-duration: 1.5s;
-  transition-timing-function: cubic-bezier(0, 0, 1, 1); }
+  transition-timing-function: cubic-bezier(0.5, -1, 0.5, 2); }
 
 body {
   -webkit-font-smoothing: antialiased; }
